@@ -7,7 +7,7 @@ import {
 } from "react";
 import PropTypes from "prop-types";
 
-const BASE_URL = "https://worldwise-server-fjv2.onrender.com/cities";
+const BASE_URL = "https://worldwise-server-fjv2.onrender.com";
 
 const CitiesContext = createContext();
 
