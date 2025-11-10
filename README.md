@@ -1,64 +1,87 @@
-# 🌍 WorldWise
+# WorldWise — Travel Tracker App
 
-**WorldWise** is a React + Vite travel tracking app that lets users mark cities they’ve visited, view them on an interactive map, and keep notes using a user-friendly interface. The app integrates a mock backend powered by JSON Server to simulate real API interactions.
+![WorldWise Demo](demo.gif)
 
-## 📌 Overview
+**React + Vite travel tracking app**  
+Mark cities you've visited, add notes & dates, explore on an interactive map
 
-Built as a practical project during a web development course, WorldWise emphasizes working with geolocation data, mapping libraries, and mock API services.
+[Live Demo](https://worldwise-eg.netlify.app) • [Frontend](https://github.com/ElenaGregov/WorldWise) • [Backend](https://github.com/ElenaGregov/WorldWise---server)
 
-## 🚀 Features
+---
 
-- Select cities on an interactive map
-- Add notes and visit dates to each city
-- View all visited cities in a list or on the map
-- Responsive UI design
-- JSON Server as a mock backend
+## Overview
 
-## 🛠️ Tech Stack
+> **Course-based project** from Jonas Schmedtmann (Udemy)  
+> **My contributions:** full deployment, stack upgrade, bug fixes, mobile responsiveness, separate backend
 
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [React Router DOM](https://reactrouter.com/)
-- [Leaflet.js](https://leafletjs.com/) + [React Leaflet](https://react-leaflet.js.org/)
-- [React Datepicker](https://reactdatepicker.com/)
-- [JSON Server](https://github.com/typicode/json-server)
+WorldWise lets users:
+- Click anywhere on the map to add a city
+- Add visit dates and personal notes
+- View all trips in a list or on the map
+- Work offline with persistent data
 
+---
 
-## 💻 Getting Started
+## Features
 
-### 1. Clone the repository
+- Interactive map with **Leaflet + React Leaflet**
+- Add / edit / delete cities
+- Date picker via **React Datepicker**
+- Fully responsive (mobile-first)
+- Mock REST API with **JSON Server**
 
+---
+
+## Tech Stack
+
+| Technology       | Badge |
+|------------------|-------|
+| React            | ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) |
+| Vite             | ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62A) |
+| React Router     | ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) |
+| Leaflet          | ![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white) |
+| JSON Server      | ![JSON Server](https://img.shields.io/badge/JSON_Server-000000?style=for-the-badge&logo=json&logoColor=white) |
+
+---
+
+## Getting Started
+
+1. Clone the repo
 ```bash
 git clone https://github.com/ElenaGregov/WorldWise.git
 cd WorldWise
 
 2. Install dependencies
-```bash
-npm install
+bashnpm install
 
-3. Start the Vite dev server
-```bash
-npm run dev
+3. Start the app
+bashnpm run dev
 
-4. Start JSON Server (mock API)
-```bash
-npm run server
+4. Start JSON Server (in a new terminal)
+bashnpm run server
 
-This starts JSON Server at http://localhost:9000 using data/cities.json.
+API runs at http://localhost:9000/cities
+Data stored in data/cities.json
+Warning: Start JSON Server before launching the app!
 
-API endpoint:
+What I Learned & Improved
 
-bash
-http://localhost:9000/cities
+Integrated Leaflet with React using React Leaflet
+Built custom hooks and global context for state management
+Managed data flow with mock REST API (JSON Server)
+Structured a production-like frontend app
 
-⚠️ Make sure to start JSON Server before using the app to ensure data loads correctly.
+My upgrades:
 
-🧠 What I Learned:
+Deployed on Netlify with custom domain
+Updated to React 18 + Vite 5
+Fixed geolocation issues on mobile
+Enhanced responsive design & UX
+Separated backend into its own repo
 
-- How to integrate Leaflet with React using React Leaflet
 
-- Working with custom hooks and global context
+Live Demo
+https://worldwise-eg.netlify.app
 
-- Managing data via mock APIs using JSON Server
-
-- Structuring a real-world frontend project
+Built by Elena Gregov
+Prague, CZ • Open to junior/mid frontend roles
