@@ -46,42 +46,55 @@ WorldWise lets users:
 
 ## Getting Started
 
-1. Clone the repo
+### 1. Clone the repository
 ```bash
 git clone https://github.com/ElenaGregov/WorldWise.git
 cd WorldWise
+```
 
-2. Install dependencies
-bashnpm install
+### 2. Install dependencies
+```bash
+npm install
+```
 
-3. Start the app
-bashnpm run dev
+### 3. Start the app
+```bash
+npm run dev
+```
 
-4. Start JSON Server (in a new terminal)
-bashnpm run server
+### 4. Start JSON Server (in a new terminal)
+```bash
+npm run server
+```
+> **API:** `http://localhost:9000/cities`  
+> **Data:** `data/cities.json`  
+>  
+> **Warning: Start JSON Server before launching the app!**
 
-API runs at http://localhost:9000/cities
-Data stored in data/cities.json
-Warning: Start JSON Server before launching the app!
+---
 
-What I Learned & Improved
+## What I Learned & Improved
 
-Integrated Leaflet with React using React Leaflet
-Built custom hooks and global context for state management
-Managed data flow with mock REST API (JSON Server)
-Structured a production-like frontend app
+- Integrated **Leaflet** with React using **React Leaflet**
+- Built **custom hooks** and **global context** for state management
+- Managed data flow with **mock REST API (JSON Server)**
+- Structured a **production-like frontend app**
 
-My upgrades:
+### My Upgrades
+- Deployed on **Netlify** with custom domain
+- Updated to **React 18 + Vite 5**
+- Fixed **geolocation issues on mobile**
+- Enhanced **responsive design & UX**
+- Separated backend into its own repo
 
-Deployed on Netlify with custom domain
-Updated to React 18 + Vite 5
-Fixed geolocation issues on mobile
-Enhanced responsive design & UX
-Separated backend into its own repo
+---
 
+## Live Demo
 
-Live Demo
-https://worldwise-eg.netlify.app
+[https://worldwise-eg.netlify.app](https://worldwise-eg.netlify.app)
 
-Built by Elena Gregov
-Prague, CZ • Open to junior/mid frontend roles
+---
+
+**Built by Elena Gregov**  
+Prague, CZ • Open to **junior/mid frontend roles**
+```
